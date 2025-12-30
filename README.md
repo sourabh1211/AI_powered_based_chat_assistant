@@ -47,11 +47,14 @@ A production-ready **MERN** starter that embeds a **React chat widget** on your 
 
 ## 📸 Screenshots
 
-Analytics dashboard screenshot:
+### 1) Chat Widget
+![Chat Widget](Screenshot%202025-12-30%20004717.png)
 
-![Analytics Dashboard](docs/analytics-dashboard.png)
+### 2) Demo Chat Session
+![Demo Chat Session](Screenshot%202025-12-30%20005050.png)
 
-> Add/replace screenshots in the `docs/` folder as needed.
+### 3) Query Analytics Dashboard
+![Analytics Dashboard](Screenshot%202025-12-30%20005122.png)
 
 ---
 
