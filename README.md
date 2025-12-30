@@ -125,11 +125,14 @@ cp server/.env.example server/.env
 Edit `server/.env`:
 
 ```env
-PORT=5000
-MONGODB_URI=mongodb://127.0.0.1:27017/kb_chat_assistant
-OPENAI_API_KEY=YOUR_KEY_HERE
-OPENAI_MODEL=gpt-5.2
-ALLOWED_ORIGINS=http://localhost:5173
+PORT=8080
+MONGO_URI=add-mongo-url
+CLIENT_ORIGIN=http://localhost:5173
+GEMINI_API_KEY=gemini-api-key
+GEMINI_MODEL=gemini-2.5-flash
+GEMINI_EMBED_MODEL=add-embed-model
+ADMIN_API_KEY=add-admin-key
+
 ```
 
 #### Client env
@@ -140,7 +143,7 @@ cp client/.env.example client/.env
 Edit `client/.env`:
 
 ```env
-VITE_API_BASE_URL=http://localhost:5000
+VITE_API_BASE_URL=http://localhost:8080
 ```
 
 > **Important:** Keep `OPENAI_API_KEY` only on the server. Never expose it in the client.
@@ -160,7 +163,7 @@ npm run dev
 ```
 
 - React client: `http://localhost:5173`
-- Express API: `http://localhost:5000`
+- Express API: `http://localhost:8080`
 
 ---
 
